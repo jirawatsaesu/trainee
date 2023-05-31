@@ -1,0 +1,12 @@
+type Province {
+  id: ID
+  name_th: String
+  name_en: String
+  geography_id: Int
+  created_at: String
+  updated_at: String
+}
+
+type Query {
+  province(id: ID): Province
+}
