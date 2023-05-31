@@ -1,4 +1,4 @@
 module.exports = {
-  person: require("./person"),
+  district: require("./district"),
   province: require("./province"),
 };

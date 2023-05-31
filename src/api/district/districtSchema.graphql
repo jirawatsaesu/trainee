@@ -1,0 +1,12 @@
+type District {
+  id: ID
+  name_th: String
+  name_en: String
+  province_id: Int
+  created_at: String
+  updated_at: String
+}
+
+type Query {
+  district(id: ID): District
+}

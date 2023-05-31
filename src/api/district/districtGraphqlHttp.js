@@ -1,6 +1,6 @@
 const { graphqlHTTP } = require("express-graphql");
-const root = require("./personRoot");
-const schema = require("./personSchema");
+const root = require("./districtRoot");
+const schema = require("./districtSchema");
 
 const graphqlMiddleware = graphqlHTTP({
   schema: schema,
