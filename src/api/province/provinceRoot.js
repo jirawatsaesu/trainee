@@ -1,8 +1,11 @@
 const provinces = require("./provinceData");
 
 const root = {
-  province: ({ id }) => {
-    const province = provinces.find((b) => b.id === id);
+  province: ({ name }) => {
+    const province = provinces.filter(
+      (p) =>
+        p.name_th.includes(name) === true || p.name_en.includes(name) === true
+    );
     return province;
   },
 };
