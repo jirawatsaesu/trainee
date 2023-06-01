@@ -2,6 +2,7 @@ const districts = require("./districtData");
 
 const root = {
   district: ({ name, province_id }) => {
+    console.log("test glitch");
     const filteredDistrictbyProvince = districts.filter(
       (e) => e.province_id === province_id
     );
