@@ -5,14 +5,14 @@ const root = {
     const filteredDistrictbyProvince = districts.filter(
       (e) => e.province_id === province_id
     );
-    if (name === null) {
-      return filteredDistrictbyProvince;
-    } else {
+    if (name) {
       const district = filteredDistrictbyProvince.filter(
         (e) =>
           e.name_th.includes(name) === true || e.name_en.includes(name) === true
       );
       return district;
+    } else {
+      return filteredDistrictbyProvince;
     }
   },
 };
