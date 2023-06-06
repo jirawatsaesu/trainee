@@ -1,8 +1,9 @@
 const express = require("express");
-const { district, province } = require("./src/api");
+const { district, province, subdistrict } = require("./src/api");
 
 const app = express();
 
+app.use("/subdistrict", subdistrict.subdistrictGraphqlHttp);
 app.use("/district", district.districtGraphqlHttp);
 app.use("/province", province.provinceGraphqlHttp);
 

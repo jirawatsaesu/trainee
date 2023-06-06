@@ -1,0 +1,13 @@
+type Subdistrict {
+  id: ID
+  zip_code: Int
+  name_th: String
+  name_en: String
+  amphure_id: String
+  created_at: String
+  updated_at: String
+}
+
+type Query {
+  subdistrict(amphure_id: String): [Subdistrict]
+}
